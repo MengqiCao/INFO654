@@ -1,0 +1,184 @@
+/* Global Styles */
+body {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    color: #494949;
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Sidebar and Todo Section */
+.sidebar, .todo-section {
+    flex: 1;
+    min-width: 250px;
+    background-color: #F4F2EC;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 50vw;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* About and Hobbies List */
+.about ul, .hobbies ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about ul li, .hobbies ul li {
+    margin: 5px 0;
+}
+
+/* Main Content */
+.main-content {
+    flex: 3;
+    min-width: 300px;
+}
+
+.two_wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+
+/* Navbar Styles */
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #F4F2EC;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.navbar ul li {
+    flex: 1;
+}
+
+.navbar ul li a {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #494949;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    background-color: #FEFDF9;
+}
+
+/* About, Todo, and Lists Section */
+.about-section, .todo-section, .lists-section {
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.about-section {
+    background-color: #E2ECD9;
+}
+
+.todo-section {
+    background-color: #FAF5E9;
+}
+
+/* Todo Section List */
+.todo-section ul {
+    margin-left: 20px;
+    padding: 0;
+}
+
+.todo-section ul li {
+    margin: 10px 0;
+}
+
+
+.lists-section {
+    flex-basis: 100%;
+    background-color: #E1E9EF;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Table Styles */
+.lists-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #E1E9EF;
+}
+
+.lists-section th, .lists-section td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.lists-section td {
+    width: 33%;
+    word-wrap: break-word;
+}
+
+.lists-section th {
+    background-color: #E1E9EF;
+    font-weight: bold;
+    width: 33%;
+}
+
+.lists-section tr:nth-child(even) {
+    background-color: #E1E9EF;
+}
+
+#tops{
+    background-color: #FFFFFF;
+}
+
+.highlight {
+    margin-top: 20px;
+}
+
+.sub-img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar, .todo-section {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+}
